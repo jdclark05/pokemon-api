@@ -16,6 +16,7 @@
 
 /* SECTION WITH STATS */
 .pokeCardBack {
+    border-radius: 10px;
     padding: 4px;
     height: 25rem;
     width: 18rem;
