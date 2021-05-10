@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Form from './components/Form';
+import Display from './components/Display';
 import './App.css';
+import appBackground from './components/images/gamer.png';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [pokemonData, setPokemonData] = useState([]);
+
+  const pokemonFinder = ( data ) => {
+    setPokemonData( [ data ] );
+  }
+
+  const styles = {
+        backgroundImage: `url(${appBackground})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'repeat',
+        width: '100vw',
+        height: '65rem'
+  };
+
+  return (      
+      <div className="appMain" style={styles}>
+        <Form onGetPoke={ pokemonFinder }/>
+        <Display pokemonData={ pokemonData } />
+      </div>
+ 
   );
 }
 

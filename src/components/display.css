@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'PokemonSolid';
+    src: local('PokemonSolid'), url(./fonts/PokemonSolid.ttf) format('truetype');
+}
+
+.mainContainer {
+    position: relative;
+    font-family: 'PokemonSolid';
+    margin: auto;
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+/* SECTION WITH STATS */
+.pokeCardBack {
+    padding: 4px;
+    height: 25rem;
+    width: 18rem;
+    background-color: rgb(248, 230, 129);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+}
+
+/* NAME PORTION */
+.frontHeader {
+    height: 2.5rem;
+    background-color: rgb(204, 173, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.pokemonName {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: auto;
+
+}
+
+
+/* IMAGE AREA */
+.pokeIMG {
+    height: 10rem;
+    background-color: rgb(204, 173, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actualIMG {
+    height: 100%;
+    width: 85%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemonImg {
+    height: 6rem;
+    margin: auto;
+
+}
+
+/* ABILITIES SECTION */
+.Abilities {
+    padding-top: 15px;
+    height: 8rem;
+    background-color: rgb(204, 173, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.abilitiesHeader {
+    margin: 2px;
+    text-decoration: underline;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    background-color: rgb(204, 173, 0);
+}
+
+.Ability {
+    margin: 2px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    background-color: rgb(204, 173, 0);
+}
+
+
+/*BASE STATS SECTION*/
+.baseStats {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background-color: rgb(204, 173, 0);
+}
+
+.stats {
+    margin: auto;
+    height: 4rem;
+}
+
+
+
+
+/* FRONT OF POKEMON CARD */
+
+.pokeCardFront {
+    height: 25rem;
+    width: 18rem;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* FORM CSS */
+.searchText {
+    color: rgb(255, 217, 0);;
+    font-family: 'PokemonSolid';
+    font-size: 1.8rem;
+}
+
+.inputField {
+    text-align: center;
+}
+
+.subButton {
+    font-family: 'PokemonSolid';
+    background-color: rgb(255, 217, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4px;
+}
+
+
