@@ -3,7 +3,7 @@ import Form from './components/Form';
 import Display from './components/Display';
 import './App.css';
 import appBackground from './components/images/mainBG.png';
-import appBackground2 from './components/images/BGoutline2.png';
+import appBackground2 from './components/images/PikachuBG.png';
 
 function App() {
   const [pokemonData, setPokemonData] = useState([]);

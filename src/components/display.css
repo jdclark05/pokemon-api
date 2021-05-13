@@ -116,7 +116,11 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin: auto;
-
+    text-shadow: 
+    -1px 0 1px rgb(219, 163, 21), 
+    0 1px 1px rgb(219, 163, 21), 
+    4px 4px 4px rgba(0, 0, 0, 0.4),
+    -1px -1px 4px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -163,7 +167,11 @@
     align-items: center;
     justify-content: center;
     height: 3.5rem;
-    background-color: rgb(204, 173, 0);
+    text-shadow: 
+    -1px 0 1px rgb(219, 163, 21), 
+    0 1px 1px rgb(219, 163, 21), 
+    4px 4px 4px rgba(0, 0, 0, 0.4),
+    -1px -1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .Ability {
@@ -174,7 +182,11 @@
     align-items: center;
     justify-content: center;
     height: 3.5rem;
-    background-color: rgb(204, 173, 0);
+    text-shadow: 
+    -1px 0 1px rgb(219, 163, 21), 
+    0 1px 1px rgb(219, 163, 21), 
+    4px 4px 4px rgba(0, 0, 0, 0.4),
+    -1px -1px 4px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -187,6 +199,11 @@
     justify-content: center;
     height: 4rem;
     background-color: rgb(204, 173, 0);
+        text-shadow: 
+    -1px 0 1px rgb(219, 163, 21), 
+    0 1px 1px rgb(219, 163, 21), 
+    4px 4px 4px rgba(0, 0, 0, 0.4),
+    -1px -1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .stats {
@@ -197,7 +214,9 @@
 
 
 
-/* FRONT OF POKEMON CARD */
+/*--------------------------*/
+/*Pokemon Card - Front - CSS */
+/*--------------------------*/
 
 .pokeCardFront {
     height: 25rem;
