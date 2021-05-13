@@ -26,17 +26,17 @@ const Form = (props) =>{
 
 
     return(
-        <div className="mt-2">
+        <div className="formContainer">
 
-            <div className="d-flex flex-row align-items-center justify-content-center mt-5" style={{ height: '10rem', width: '100%'}}>
+            <div className=" formContainer2 d-flex flex-row align-items-center justify-content-center">
 
-                <form onSubmit={ (e) => handleSubmit(e, e.target[0].value) } className="d-flex flex-row align-items-center justify-content-center" style={{width: '40rem'}} >
+                <form className="actualForm d-flex flex-row align-items-center justify-content-center" onSubmit={ (e) => handleSubmit(e, e.target[0].value) } >
 
-                    <label className="searchText m-1" style={{letterSpacing: '.1rem'}}>Pokemon Index: </label>
+                    <label className="searchText">Pokemon Index: </label>
 
-                    <input className="inputField m-1" name="getPoke" placeholder="Search by Name or ID" style={{width: '15rem', height: '2.5rem', borderRadius: '10px'}} type="text"/>
+                    <input className="inputField" name="getPoke" placeholder="Enter Name or ID" type="text"/>
 
-                    <input className="subButton m-1 d-flex flex-row align-items-center justify-content-center" style={{letterSpacing: '.1rem', height: '2.25rem', width: '6rem', borderRadius: '5px', border: '1px solid #999', color: '#000', fontSize: '1.2rem'}} type="submit" />
+                    <input className="subButton d-flex flex-row align-items-center justify-content-center" type="submit" />
 
                 </form>
             </div>

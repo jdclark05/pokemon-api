@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Form from './components/Form';
 import Display from './components/Display';
 import './App.css';
-import appBackground from './components/images/gamer.png';
+import appBackground from './components/images/mainBG.png';
+import appBackground2 from './components/images/BGoutline2.png';
 
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
@@ -16,13 +17,22 @@ function App() {
         backgroundSize: 'cover',
         backgroundRepeat: 'repeat',
         width: '100vw',
-        height: '65rem'
+        height: '110rem'
   };
+
+  const styles2 = {
+    backgroundImage: `url(${appBackground2})`,
+    backgroundSize: 'cover'
+  }
 
   return (      
       <div className="appMain" style={styles}>
-        <Form onGetPoke={ pokemonFinder }/>
-        <Display pokemonData={ pokemonData } />
+        <div className="contentContainer" style ={styles2}>
+          <div className="pokePlacer">
+            <Form onGetPoke={ pokemonFinder }/>
+            <Display pokemonData={ pokemonData } />
+          </div>
+        </div>
       </div>
  
   );

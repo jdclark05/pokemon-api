@@ -3,18 +3,91 @@
     src: local('PokemonSolid'), url(./fonts/PokemonSolid.ttf) format('truetype');
 }
 
-.mainContainer {
-    position: relative;
+/*--------------------------*/
+/*------ Form - CSS --------*/
+/*--------------------------*/
+.formContainer {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.formContainer2 {
+    height: 100px;
+    margin-left: 95px;
+}
+
+.actualForm {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchText {
+    margin-top: 10px;
+    letter-spacing: .1rem;
+    color: rgb(255, 217, 0);;
     font-family: 'PokemonSolid';
-    margin: auto;
+    font-size: 2.5rem;
+    text-shadow: 
+    -1px 0 1px rgb(219, 163, 21), 
+    0 2px 2px rgb(219, 163, 21), 
+    8px 8px 8px rgba(0, 0, 0, 0.4),
+    -1px -1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.inputField {
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    font-family: 'PokemonSolid';
+    font-weight: normal;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.subButton {
+    letter-spacing: .2rem;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    width: 150px;
+    height: 50px;
+    font-family: 'PokemonSolid';
+    background-color: rgb(204, 173, 0);
+    padding-top: 4px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    text-shadow: 
+    -1px 0 1px rgb(219, 163, 21), 
+    0 1px 1px rgb(219, 163, 21), 
+    4px 4px 4px rgba(0, 0, 0, 0.4),
+    -1px -1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/*--------------------------*/
+/*Pokemon Card - Back - CSS */
+/*--------------------------*/
+
+.mainContainer {
+    margin-top: 70px;
+    margin-left: 100px;
+    font-family: 'PokemonSolid';
     width: 50rem;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
 }
 
-/* SECTION WITH STATS */
+/* Stats Portion */
 .pokeCardBack {
     border-radius: 10px;
     padding: 4px;
@@ -25,6 +98,7 @@
     flex-direction: column;
     justify-content: center;
     justify-content: flex-start;
+    box-shadow: 8px 10px 15px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* NAME PORTION */
@@ -127,30 +201,7 @@
 
 .pokeCardFront {
     height: 25rem;
-    width: 18rem;
-    background-color: rgb(0, 0, 0);
+    width: 17.8rem;
+    box-shadow: 8px 10px 15px 8px rgba(0, 0, 0, 0.25);
 }
-
-
-/* FORM CSS */
-.searchText {
-    color: rgb(255, 217, 0);;
-    font-family: 'PokemonSolid';
-    font-size: 1.8rem;
-}
-
-.inputField {
-    text-align: center;
-}
-
-.subButton {
-    font-family: 'PokemonSolid';
-    background-color: rgb(255, 217, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 4px;
-}
-
 
